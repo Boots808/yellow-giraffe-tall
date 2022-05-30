@@ -6,6 +6,7 @@ var userInfo = {
   password: "",
 };
 
+
 // characters to use
 var lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
 var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -51,10 +52,14 @@ function chooseChars() {
 };
 
 // Write password to the #password input
-function generatePassword() {
-  console.log(generatePassword ());
+function generate() {
+  console.log(generate());
 
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+
+generateBtn.on('click', function () {
+  var Password = password(15);
+  passwordDisplay.text(Password);
+});
