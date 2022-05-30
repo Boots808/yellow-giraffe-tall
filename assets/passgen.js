@@ -17,10 +17,12 @@ var specialChars = /[!"#$%&'()*+,-./:;<=>?@[\]^_{|}~`]/;
 function prompt() {
   window.alert("Let's get a password!");
   window.alert("Use Lowercase Letters?");
-  window.alert("Use uppercase Letters?");
+  window.alert("Use Uppercase Letters?");
   window.alert("Use Special Characters?")
 }
 prompt();
+
+let password = Math.floor(math.random()*10);
 
 //Prompts asking for password length
 function passwordLength() {
@@ -49,10 +51,9 @@ function chooseChars() {
 };
 
 // Write password to the #password input
-
 function generatePassword() {
-  console.log("password");
-  generatePassword();
+  console.log(generatePassword ());
+
 }
 
 // Add event listener to generate button
