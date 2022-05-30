@@ -3,7 +3,7 @@
 var userInfo = {
   passLength: 0,
   chars: "",
-  password: ""
+  password: "",
 };
 
 // characters to use
@@ -12,21 +12,21 @@ var uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var numericChars = "0123456789";
 var specialChars = /[!"#$%&'()*+,-./:;<=>?@[\]^_{|}~`]/;
 
+// Alert Message
+
+function prompt() {
+  window.alert("Let's get a password!");
+  window.alert("Use Lowercase Letters?");
+  window.alert("Use uppercase Letters?");
+  window.alert("Use Special Characters?")
+}
+prompt();
 
 //Prompts asking for password length
-function chooseLength() {
-  userInfo.passLength = prompt("Enter a number between 8 and 128");
-  chooseLength();
+function passwordLength() {
+  window.alert(userInfo.passLength("Enter a number between 8 and 128"));
+  Length();
 }
-
-  // confirm length parameters
-if(userInfo.value.length >= 8) {
-  userInfo.passLength.remove("invalid");
-  userInfo.passLength.add("valid");
-} else {
-  userInfo.passLength.remove("valid");
-  userInfo.passLength.add("invalid");
-    }
 
 //user to define password criteria
 function chooseChars() {
@@ -48,22 +48,12 @@ function chooseChars() {
   }
 };
 
-function generatePassword() {
-
-// Alert Message
-function alert ();
-  window.alert("Answer the following to receive your generated password");
-
-};
-
 // Write password to the #password input
 
-function writePassword() {
-  console.log('Password');
-  return userInfo.password;
+function generatePassword() {
+  console.log("password");
+  generatePassword();
 }
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-}
